@@ -37,7 +37,7 @@ func Read() (Config, error) {
 		return Config{}, err
 	}
 
-	return Config{}, nil
+	return cfg, nil
 }
 
 func getConfigFilePath() (string, error) {
