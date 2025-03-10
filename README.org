@@ -10,6 +10,11 @@ just using a docker image, in which case you can run the following:
   make startpostgres
 #+end_src
 
+You will also need to create the gator db
+#+begin_src shell
+  make createdb
+#+end_src
+
 I also use [[https://github.com/pressly/goose][goose]] to apply the sql files to the postgres database, which you can
 apply with the following:
 #+begin_src shell
